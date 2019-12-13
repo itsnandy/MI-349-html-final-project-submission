@@ -1,0 +1,184 @@
+body {
+    background-color: rgb(5, 18, 70);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 100;
+}
+
+header {
+    padding: 8px 0px 10px 20px;
+    border-bottom: 2px solid rgb(223, 53, 214);
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu a{
+    color: grey;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(223, 53, 214);
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 20px;
+    /* width: 30px; */
+    padding: 20px 140px;
+
+}
+/* flex box or inline displays */
+aside {
+    float: left;
+    background: grey;
+    padding: 0px 100px 900px 25px;
+}
+
+.online {
+    list-style: none;
+}
+
+li.p1::before {
+    content: "\2022";
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -3em;
+    padding-bottom: 10px;
+}
+
+li.p2::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -3em;
+    padding-bottom: 10px;
+}
+
+li.p3::before {
+    content: "\2022";
+    color: rgb(0, 256, 0);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -3em;
+    /* padding-bottom: 10px; */
+}
+
+.line {
+    width: 140px;
+    /* height: 0px; */
+    margin-left: -1em;
+    border-bottom: 2px solid black;
+    position: absolute;
+    /* padding-top: 10px; */
+}
+
+.last_played {
+    /* margin-left: -1em; */
+    padding-top: 10px;
+}
+
+.last {
+    list-style: none;
+    margin-left: -3em;
+}
+
+li.g1 {
+    padding-bottom: 20px;
+}
+
+.welcome {
+    /* float: left; */
+    /* display: inline-block; */
+    background: rgb(48, 50, 53);
+    padding: 0px 0px 0px 300px;
+}
+.welcome h1 {
+    padding: 10px 0px 0px 0px;
+}
+
+.streams {
+    margin: 0px;
+    padding: 0px;
+}
+
+.streams li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 150px 20px 0px;
+}
+
+.titles {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.titles li{
+    display: inline-block;
+    padding: 0px 300px 0px 50px;
+}
+
+.recommend {
+    background: rgb(30, 30, 30);
+    padding: 0px 0px 0px 0px;
+}
+
+.recommend h1 {
+    padding: 20px 0px 0px 310px;
+}
+
+.recommend ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.recommend li {
+    display: inline-block;
+    padding: 10px 200px 20px 60px;
+}
+
+.news {
+    background: rgb(48, 50, 53);
+    padding: 0px 0px 0px 0px;
+}
+
+.news h1 {
+    padding: 20px 0px 0px 310px;
+}
+
+.news ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.news li {
+    padding: 0px 0px 20px 0px;
+}
+
+/* Settings */
+
+.username {
+    display: inline-block;
+    /* flex-wrap: wrap; */
+    background: rgb(48, 50, 53);
+    /* padding: 0px 0px 0px 300px; */
+}
+
+.username form {
+    display: inline-block;
+}
