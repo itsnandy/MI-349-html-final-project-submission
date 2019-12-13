@@ -173,12 +173,62 @@ li.g1 {
 /* Settings */
 
 .username {
-    display: inline-block;
+    display: flex;
     /* flex-wrap: wrap; */
+    /* padding: 0px 200px 0px 0px; */
     background: rgb(48, 50, 53);
     /* padding: 0px 0px 0px 300px; */
 }
 
 .username form {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 0 0 0;
+}
+
+.username div {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0 0 3%;
+}
+
+.checks {
+    background: rgb(30, 30, 30);
+    display: flex;
+    /* justify-content: center; */
+}
+
+.platforms {
+    padding: 5% 0% 2% 4%;
+}
+
+.launchers {
+    padding: 5% 0% 2% 4%;
+}
+
+.gameSearch {
+    padding: 2% 0% 2% 4%;
+}
+
+.gameSearch ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gameSearch li a {
+    border: 1px solid #dddddd;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.gameSearch li a:hover:not(.header) {
+    background-color: #eee;
+}
+
+.knowYou {
+    background: rgb(48, 50, 53);
 }

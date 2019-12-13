@@ -8,12 +8,11 @@
     <title>Set Up Profile</title>
 </head>
 <body>
-    <!-- <h1><a href="../../">What up</a></h1> -->
     <header>
         <h1>
             Looking for Player
             <ul class="menu">
-                <li><a href="">Discover</a></li>
+                <li><a href="../discover/index.html">Discover</a></li>
                 <li><a href="">Browse</a></li>
                 <li><a href="../../">Logout</a></li>
             </ul>
@@ -32,14 +31,98 @@
     </aside>
 
     <article class="username">
-        <img src="../../img/profile_pic.png" alt="Profile picture" width=250px>
+        <img src="../../img/profile_pic.png" alt="Profile picture" height="250px" width="250px" >
         <form>
             Name: <input type="text" name="Name" value=""><br>
             Email: <input type="text" name="Email" value=""><br>
             Username: <input type="text" name="Username" value="">
             <!-- <input type="submit" value="Submit"> -->
         </form>
+        <div>
+            <p>Languages</p>
+            <input type="text" name="" id="idea">
+            <input type="button" value="add to list" id="add">
+            <ul id="list"></ul>
+        </div>
+        <script>
+            document.getElementById("add").onclick = function () {
+                var node = document.createElement("Li");
+                var text = document.getElementById("idea").value;
+                var textnode = document.createTextNode(text); node.appendChild(textnode);
+                document.getElementById("list").appendChild(node);
+            } 
+        </script>
+    </article>
+
+    <article class="checks">
+        <div class="platforms">
+            <h1>Platforms</h1>
+            <input type="checkbox" name="PC"> PC<br>
+            <input type="checkbox" name="PS4"> PS4<br>
+            <input type="checkbox" name="Xbox"> Xbox<br>
+            <input type="checkbox" name="Swtich"> Switch<br>
+        </div>
+
+        <div class="launchers">
+            <h1>Launchers</h1>
+            <input type="checkbox" name="Steam"> Steam <br>
+            <input type="checkbox" name="Origin" > Origin <br>
+            <input type="checkbox" name="Blizzard"> Blizzard <br>
+            <input type="checkbox" name="Epic"> Epic <br>
+            <input type="checkbox" name="UPlay"> UPlay <br>
+        </div>
+
+        <div class="gameSearch">
+            <input type="text" id="myList" onkeyup="myList()" placeholder="Search for games . . ." title="Type in a game">
+            
+            <ul class="gameList" id="gameList">
+                <li><a href="#">Call of Duty</a></li>
+                <li><a href="#">Star Wars</a></li>
+                <li><a href="#">Fortnite</a></li>
+                <li><a href="#">Spiderman</a></li>
+                <li><a href="#">Death Stranding</a></li>
+            </ul>
+            
+            <script>
+                function myList() {
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myUL");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        txtValue = a.textContent || a.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </article>
+
+    <article class="knowYou">
+        <h1>Getting to know you</h1>
+        <ul>
+            <h1>Online Chatting</h1>
+                <input type="checkbox" name="mic"> Do you use a mic? <br>
+                <input type="checkbox" name="swear"> Do you swear? <br>
+                <input type="checkbox" name="status"> Do you lead or follow? <br>
+                <input type="checkbox" name="comp"> Do you play competitively? <br>
+                <button onclick="myRange()">Set here</button> How vocal are you? <br>
+        </ul>
+        <script>
+            function myRange() {
+                var x = document.createElement("Input");
+                x.setAttribute("type", "range");
+                document.body.appendChild(x);
+            }
+        </script>
 
     </article>
+
 </body>
 </html>
