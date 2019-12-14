@@ -10,8 +10,9 @@ h1 {
 }
 
 header {
-    padding: 8px 0px 10px 20px;
     border-bottom: 2px solid rgb(223, 53, 214);
+    padding: 10px;
+    flex: 0 0 100%; 
 }
 
 .menu {
@@ -36,8 +37,12 @@ header {
 }
 /* flex box or inline displays */
 aside {
-    float: left;
     background: grey;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* padding: 20px; */
+    /* flex: 0 0 25% 0; */
+    float: left;
     padding: 0px 100px 900px 25px;
 }
 
@@ -76,7 +81,7 @@ li.p3::before {
 }
 
 .line {
-    width: 140px;
+    width: 217px;
     /* height: 0px; */
     margin-left: -1em;
     border-bottom: 2px solid black;
@@ -126,7 +131,7 @@ li.g1 {
 
 .titles li{
     display: inline-block;
-    padding: 0px 300px 0px 50px;
+    padding: 0px 181px 0px 0px;
 }
 
 .recommend {
@@ -147,27 +152,33 @@ li.g1 {
 
 .recommend li {
     display: inline-block;
-    padding: 10px 200px 20px 60px;
+    padding: 20px 150px 20px 60px;
 }
 
 .news {
     background: rgb(48, 50, 53);
     padding: 0px 0px 0px 0px;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .news h1 {
     padding: 20px 0px 0px 310px;
 }
 
+.news_1 {
+    display: flex;
+    padding: 20px 0 20px 50px;
+}
+
 .news ul {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-    display: inline-block;
+    width: 900px;
+    border: 3px solid black;
 }
 
 .news li {
-    padding: 0px 0px 20px 0px;
+    list-style-type: none;
+    /* border-bottom: black; */
 }
 
 /* Settings */
@@ -231,4 +242,238 @@ li.g1 {
 
 .knowYou {
     background: rgb(48, 50, 53);
+}
+
+.knowYou h1 {
+    padding: 20px 0px 0px 320px;
+}
+
+.knowYou ul {
+    padding: 0 0 30px 320px;
+}
+
+/* Discover */
+
+.players {
+    background: rgb(48, 50, 53);
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.players h1 {
+    padding: 20px 0px 0px 50px;
+}
+
+.player_flex {
+    display: flex;
+    padding-top: 20px;
+}
+
+.player_1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
+    padding: 80px 0 20px 0;
+}
+
+.player_2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -100px;
+    padding: 80px 0 20px 300px;
+}
+
+.player_3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -100px;
+    padding: 80px 0 20px 300px;
+}
+
+.highlights {
+    background: rgb(30, 30, 30);
+    display: flex;
+}
+
+.highlights h1 {
+    padding: 20px 0px 0px 50px;
+}
+
+.stream_1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -200px;
+    padding: 80px 0 20px 0;
+}
+
+.stream_2 {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 20px 30px;
+}
+
+.stream_3 {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 20px 30px;
+}
+
+.taste {
+    background: rgb(48, 50, 53);
+    display: flex;
+}
+
+.taste h1 {
+    padding: 20px 0px 0px 50px;
+}
+
+.taste_1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -280px;
+    padding: 80px 0 20px 0;
+}
+
+.taste_2 {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: -280px; */
+    padding: 80px 0 20px 120px;
+}
+
+.taste_3 {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 20px 140px;
+}
+
+.friends {
+    background: rgb(48, 50, 53);
+    display: flex;
+}
+
+.friends h1 {
+    padding: 20px 0px 0px 50px;
+}
+
+.friend_flex {
+    display: flex;
+    padding-top: 20px;
+}
+
+.friend_1 {
+    margin: 90px 0 0 -120px;
+}
+
+.friend_2 {
+    margin: 90px 0 0 150px;
+}
+
+.friend_3 {
+    margin: 90px 0 0 120px;
+}
+
+.recently {
+    display: flex;
+    background: rgb(30, 30, 30);
+}
+
+.recently h1 {
+    padding: 20px 0px 0px 50px;
+}
+
+.game_1 {
+    margin: 75px 0 0 -100px;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+
+.game_2 {
+    margin: 68px 0 0 175px;
+}
+
+.game_3 {
+    margin: 68px 0 0 175px;
+}
+
+.happening {
+    background: rgb(48, 50, 53);
+    display: flex;
+}
+
+.happening h1 {
+    padding: 20px 0px 0px 50px;
+}
+
+.now_stack {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.now_1 {
+    display: flex;
+    /* flex-direction: column; */
+    /* display: inline-block; */
+    margin: 70px 0 0 -200px;
+}
+
+
+.now_2 {
+    display: flex;
+    margin: 70px 0 0 100px;
+}
+
+.now_3 {
+    display: flex;
+    margin: 70px 0 0 100px;
+}
+
+footer {
+    background-color: black;
+    padding: 12px;
+    display: flex;
+    flex: 0 0 100%;
+}
+
+@media all and (max-width: 1024px) {
+    aside {
+        float: none;
+        padding: 20px;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    .line {
+        /* 1vw = 1% of viewport width
+        1vh = 1% of viewport height */
+        width: 95vw;
+    }
+}
+
+
+@media all and (max-width: 839px) {
+    aside {
+        float: none;
+        padding: 20px;
+    }
+
+    .line {
+        /* 1vw = 1% of viewport width
+        1vh = 1% of viewport height */
+        width: 95vw;
+    }
+}
+
+@media all and (max-width: 480px) {
+    aside {
+        float: none;
+        padding: 20px;
+    }
+
+    .line {
+        width: 87vw;
+    }
 }
